@@ -1,0 +1,105 @@
+#include <stdio.h>
+#include <string.h>
+void spadneOS();
+void slovaZeSouboru();
+void kartoteka();
+void max(int lhs, int rhs);
+void vypisArgumenty(int pocetArgumentu, char* argumenty[]);
+void standartVstup();
+void vypisArgumentyChar(int pocetArgumetu, char* argumenty[]);
+
+int main(int argc, char* argv[]){
+	//slovaZeSouboru();	
+	//kartoteka();
+	//int cislo = max(22,11);
+	//vypisArgumenty(argc,argv);
+	//vypisArgumentyChar(argc, argv);
+	return 0;
+}
+
+void vypisVstupCharaktery(){
+	printf("Načtěte charakter\n");
+	int charakter=getchar();
+	while(charakter!=EOF){
+		if(charakter!=10){
+			printf("%d %c\n",charakter,charakter);
+		}
+		charakter = getchar();
+	}
+}
+
+void vypisArgumentyChar(int pocetArgumentu, char* argumenty[]){
+	//TODO 
+	int i = 0;
+	for(i,pocetArgumentu>i, i++){
+		j=0;	
+		while(argumenty[i][j] != '\0'){
+			printf("%c",argumenty[i][j++]);
+		}
+	}
+}
+
+/*
+void spadneOS(){
+	char *hello = "hello"; 
+	char world[] = "world";
+	printf("%c %c", hello[1], world [1]);
+}
+
+void slovaZeSouboru(){
+	FILE* soubor = fopen("praceSeSoubory.txt","r");
+	if(soubor != NULL){
+		char nacteni[99];
+		while(fscanf(soubor, "%98s", nacteni)==1){
+		printf("%s \n", nacteni);
+		}
+	}
+	fclose(soubor);
+}
+void kartoteka(){
+	printf("Zadejte rodné číslo:");
+	int rodneCislo;
+	scanf("%d",&rodneCislo);
+	printf("Zadejte vaše jméno a příjmení:");
+	char jmeno[50];
+		printf("Zadejte vaši výšku v desetinném čísle pomocí tečky\n");
+	double vyska;
+	scanf("%lf", &vyska);
+	printf("%s %.2f\n", jmeno,vyska);
+	//fprint(soubor,"ABC %d\n",1); - zapsání do souboru ABC a text
+	printf("Byl jste zaveden do evidence\n");
+}
+
+void max(int lhs, int rhs){
+	if(lhs>rhs){
+		printf("%d/n",lhs);
+	} else{
+		printf("%d/n",rhs);
+	}
+}
+
+void vypisArgumenty(int pocetArgumentu, char* argumenty[]){
+	//zakomponovat boolean, aby se nevypisovalo vickrat 
+	int i=0;
+	while(i<pocetArgumentu){
+		//printf("%s/n",argumenty[i]);
+		if(strcmp(argumenty[i], "-h")==0 || strcmp(argumenty[i],"-help")==0){
+			printf("help/n");
+		}
+		else{
+			printf("Nápověda nenalezena/n");
+		}
+		i++;
+	}
+}
+
+void standartVstup(
+	//dokoncit
+        char textBezMezer[256];
+	int vstup = scanf("%255s",textBezMezer);
+	while(vstup==1){
+		printf("Nactene slovo: %s\n",textBezMezer)
+             
+	}
+);
+*/
